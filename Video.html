@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Videos</title> <!-- my title-->
+    <link href="StyleSheet.css" rel="stylesheet" /> <!-- linking this page to my external stylesheet-->
+    <script src="jq/jquery-3.2.0.min.js"></script> <!-- linking the jquery so it may function on my website-->
+    <meta charset="utf-8" />
+</head>
+<!--activates my pausing function which prevents the user from seeing the display - loader-->
+<body onload="myFunction()" style="margin:0;">
+
+    <!--my loader-->
+    <div id="loader"></div>
+
+    <!--shows the div-->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!--my drop down div-->
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>  <!--my menu button-->
+            <div class="dropdown-content">
+                <!-- my div dropdown content-->
+                <!--many links-->
+                <a href="Home.html">Home</a>
+                <a href="CV.html">My CV</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Story.html">Stories</a>
+                <a href="Audio.html">Audio</a>
+            </div>
+        </div>
+        <!--where my content goes into - want to make it black-->
+        <div id="contentContainer">
+            <!--adds space for text and graphics - white background-->
+            <div class="newContent">
+                <!--my header with blue background with white text-->
+                <div class="headersection">
+                    <h1 class="headerfont">Videos</h1>
+                </div>
+
+                <!--an amazing video-->
+                <video width="100%" height="auto" controls>
+                    <!--linking the video to its source-->
+                    <source src="Media/Video/Work Hard  Motivational Video.mp4" type="video/mp4">
+                    <source src="Media/Video/Work Hard  Motivational Video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <!--text in a paragrapgh tag-->
+                <p>An inspiring video</p>
+
+            </div>
+        </div>
+    </div>
+    <!--linking my external javascript to this page--> 
+    <script src="JavaScript.js"></script>
+</body>
+</html>

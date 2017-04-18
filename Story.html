@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Stories</title> <!-- my title - my stories page-->
+    <script src="jq/jquery-3.2.0.min.js"></script> <!-- linking my jquery to my page so it can work-->
+    <link href="StyleSheet.css" rel="stylesheet" /> <!-- linking my external stylesheet to my page-->
+    <meta charset="utf-8" />
+</head>
+<!--activates my pausing function which prevents the user from seeing the display - loader-->
+<body onload="myFunction()" style="margin:0;">
+    <!--my loader-->
+    <div id="loader"></div>
+
+    <!--shows the div-->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="dropdown"> <!--my drop down div-->
+            <button class="dropbtn">Menu</button> <!--my menu button-->
+            <div class="dropdown-content">  <!-- my div dropdown content-->
+                <!--many links-->
+                <a href="Home.html">Home</a>
+                <a href="CV.html">My CV</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+        <!--where my content goes into - want to make it black-->
+        <div id="contentContainer">
+            <!--adds space for text and graphics - white background-->
+            <div class="newContent">
+                <!--my header with blue background with white text-->
+                <div class="headersection">
+                    <h1 class="headerfont">Stories</h1>
+                </div>
+                <!-- div for my stories-->
+                <div id="myStories">
+                    <!-- div for many extracts-->
+                    <div id="extracts">
+                        <!-- extract 1 - about me -->
+                        <div id="exactline1">
+
+                            <!-- h1 tag with the heading -->
+                            <h1>About Me</h1>
+                            <!-- p tag with the content - with break tags -->
+                            <p>
+                                I am 20 years old. I am studying at CTU Training Solutions.<br />
+                                I was born and raised in the Free State, Harrismith. I used to live in England<br />
+                                when I was much younger. I would like to go back there once more<br />
+                                and experience it, again. I have so many memories connected to that special place.<br />
+                                <br />
+                                I completed my school career at Harriston. I completed my Matric year in 2015.<br />
+                                I carried on studying to persue my dream, to try and become a well-known software developer. <br />
+
+
+                            </p>
+
+                        </div>
+                        <!-- extract 2 - my goals -->
+                        <div id="exactline2">
+                            <!-- h1 tag with the heading -->
+                            <h1>My Goals</h1>
+                            <!-- p tag with the content - with break tags -->
+                            <ul>
+                                <li>To work hard.</li>
+                                <li>To become a well-known successful software developer</li>
+                                <li>To do something that I love (Programming).</li>
+                                <li>Live a happy but simple life.</li>
+                                <li>To do everything with a purpose.</li>
+                                <li>To not have any expectations.</li>
+                                <li>To always be honest towards myself</li>
+                                <li>Aim for my goals</li>
+                                <li>Never give up</li>
+                                <li>To create a thriving business</li>
+                            </ul>
+
+                        </div>
+                        <!-- extract 3 - Reason why I am Studying Software Development -->
+                        <div id="exactline3">
+                            <!-- h1 tag with the heading -->
+                            <h1>Reason why I am Studying Software Development</h1>
+                            <!-- p tag with the content - with break tags -->
+                            <p>
+                                The reason why I am Studying Software Development because I feel like I can do anything.<br />
+                                I feel like I have magical powers. I might struggle along the way but I am always learning and having fun. <br />
+                                It is great to live in this world where technology is always improving, it pushes me as an individual to improve<br />
+                                in not my ability to do great things but to do them well - with confidence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    <!--linking my external javascript to this page--> 
+        <script src="JavaScript.js"></script>
+
+</body>
+</html>

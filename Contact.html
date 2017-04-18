@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title> <!-- my title - contact page-->
+    <script src="jq/jquery-3.2.0.min.js"></script> <!-- linking my jquery to my page so it can work-->
+    <link href="StyleSheet.css" rel="stylesheet" /> <!-- linking my external stylesheet to my page-->
+    <meta charset="utf-8" />
+</head>
+<!--activates my pausing function which prevents the user from seeing the display - loader-->
+<body onload="myFunction()" style="margin:0;">
+    <!--my loader-->
+    <div id="loader"></div>
+
+    <!--shows the div-->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="dropdown"> <!--my drop down div-->
+            <button class="dropbtn">Menu</button> <!--my menu button-->
+            <div class="dropdown-content">  <!-- my div dropdown content-->
+                <!--many links-->
+                <a href="Home.html">Home</a>
+                <a href="CV.html">My CV</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Story.html">Stories</a>
+
+            </div>
+        </div>
+        <!--where my content goes into - want to make it black-->
+        <div id="contentContainer">
+            <!--adds space for text and graphics - white background-->
+            <div class="newContent">
+                <!--my header with blue background with white text-->
+                <div class="headersection">
+                    <h1 class="headerfont">Contact</h1>
+                </div>
+
+                <!-- my form so that anyone may fill in the contents and submit it directly to my email-->
+                <div id="myForm">
+
+                    <form method="post" action="mailto:nouwensmichael0@gmail.com" enctype="text/plain">
+                        <fieldset>
+                            <legend>Enter the following</legend>
+                            <fieldset>
+                                <legend>Names</legend>
+                                <label for="name">First Name</label> <!--name-->
+                                
+                                <input type="text" name="name" id="name" placeholder="Enter first name" size="15" maxlength="12" required /> <!--maxlength="20"-->
+                                
+                                <label for="surname">Surname</label> <!--surname-->
+                                
+                                <input type="text" name="surname" id="surname" placeholder="Enter surname" size="15" maxlength="12" required />
+                                <br />
+                            </fieldset>
+                            <br />
+
+                            <fieldset>
+                                <legend>Telephone</legend>
+                                <label for="tel">Telephone Number</label> <!--telephone number-->
+                                <input type="tel" name="tel" id="tel" placeholder="Enter telephone" size="15" maxlength="10" required />
+                                <br />
+                            </fieldset>
+                            
+                            <br />
+
+                            <fieldset>
+                                <legend>Email Address</legend>
+                                <label for="femail">Email</label> <!--email-->
+                               
+                                <input type="text" placeholder="Enter Email Address" required />
+                                <br />
+                            </fieldset>
+                            <br />
+
+                        
+                            <fieldset>
+                                <legend>Tell Me Something</legend>
+                                <label for="Something">Tell Me Something</label> <!--address-->
+                                <br />
+                                <textarea id="Something" name="Something" placeholder="Tell Me Something" maxlength="50" required rows="4" cols="50"></textarea>
+                                <br />
+                            </fieldset>
+                           
+                        </fieldset>
+                        <br />
+                        <input type="submit" value="Submit"> <!--submit-->
+                        <input type="reset" value="Reset" /> <!--reset-->
+                    </form>
+                    <br />
+                    <!-- a map (google maps) of where I stay-->
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.417681877848!2d28.24932031498714!3d-25.75676398363893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956053482295d9%3A0xfbbb0f5f204b23b9!2sFarmer&#39;s+Folly+St%2C+Pretoria%2C+0081!5e0!3m2!1sen!2sza!4v1490113682348" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <!-- a div with my address-->
+                    <div id="myInfo">
+                        <p id="contactP"
+                            Cell: 079 360 7764<br />
+                            C101 34 Farmer's Folly Street<br />
+                            Lynnwood<br />
+                            Pretoria<br />
+                            South Africa<br />
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--linking my external javascript to this page--> 
+    <script src="JavaScript.js"></script>
+</body>
+</html>

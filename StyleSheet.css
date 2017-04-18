@@ -1,0 +1,559 @@
+﻿
+body {
+    background: url('black-and-white-pattern-1080p-wallpapers.jpg') -25px -50px; /*Setting my background*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*setting my font*/
+    position: fixed; /*setting the position for the background - fixed*/
+    top: 0; /*right up against the browser*/
+    width: 100%; /*across the whole display*/
+    z-index: 0;
+    height: 100%; /*vertically the whole display*/
+    background-size: calc(100% + 50px); /*compinsating for the mouse moving*/
+}
+
+/*--------------------------*/
+/*Loader*/
+/*--------------------------*/
+
+/* Center the loader - blocks the content so this is the only thing that is displayed*/
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #282828;
+    border-radius: 50%;
+    border-top: 16px solid white;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+/*the spin keyframes*/
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add animation to the page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+
+/*animate my keyframe*/
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+/*my div - where the content is located*/
+#myDiv {
+    display: none;
+    text-align: center;
+}
+/*--------------------------*/
+/*Drop down - menu*/
+/*--------------------------*/
+
+.dropbtn {
+    margin-top: 5px;
+    background-color: #7793ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*my class drop*/
+.dropdown {
+    float: left;
+    clear: both;
+    display: inline-block;
+}
+
+/*dropdown content*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+    /*drop down a links of the content*/
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /*hover of the a links*/
+        .dropdown-content a:hover {
+            background-color: #437ef8;
+            color: white;
+        }
+
+/*what the hover over content should look like - how it looks like*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*colour of drop down content*/
+.dropdown:hover .dropbtn {
+    background-color: #437ef8;
+}
+
+/*--------------------------*/
+/*Pictures - slide show*/
+/*--------------------------*/
+
+
+
+/*targetng my container id*/
+#contentContainer {
+    margin-top: 5px; /*space between top of the browser and my content*/
+    align-content: center;
+    margin-left: auto; /*make sure that the text/graphics are centered */
+    margin-right: auto;
+    text-align: center;
+    height: 900px; /*the max height of the container*/
+    width: 80%; /*how much of the page does it optain*/
+    padding: 10px; /*making space between text/graphics and the container*/
+    background-color: #282828; /*changing the background colour*/
+    opacity: 0.8; /*makes it see through*/
+    margin-bottom: 10px; /*making space below the container*/
+}
+
+/*targeting my gallery id*/
+#myGallery {
+    position: relative; /*make the position relative to the content size*/
+    width: 100%; /* Set your image width */
+    height: 100%; /* Set your image height */
+}
+    /*targeting the img which is specificly used in my gallery id*/
+    #myGallery img {
+        display: none; /*shows no display*/
+        position: absolute; /*position does not move*/
+        top: 0; /*right up against the top*/
+        left: 0; /*right up against the left*/
+        width: 100%; /*spreads across the whole div*/
+        height: 100%; /*spreads vertically of the whole div*/
+    }
+
+        /*how the image is displayed*/
+        #myGallery img.active {
+            display: block;
+        }
+
+
+/*--------------------------*/
+/*New Content*/
+/*--------------------------*/
+
+/* my content class*/
+.newContent {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: unset;
+}
+
+
+/*--------------------------*/
+/*Map and details (contact page)*/
+/*--------------------------*/
+
+/*my map*/
+#map {
+    float: left;
+    clear: both;
+    width: 30%;
+    height: 100px;
+}
+
+/*my location details*/
+#myInfo {
+    float: right;
+    /*clear:both;*/
+    color: black;
+    width: 30%;
+    align-content: center;
+}
+
+/*hover over the inputs - textboxes  - change colour*/
+input:hover {
+    background-color: lightgray;
+}
+
+/*hover over the text area - big text box  - change colour*/
+textarea:hover {
+    background-color: lightgray;
+}
+
+/*hover over id - change colour*/
+#contactP:hover {
+    background-color: lightgray;
+}
+
+
+/*--------------------------*/
+/*header section*/
+/*--------------------------*/
+
+/*my header class*/
+.headersection {
+    width: 100%;
+    height: 60px;
+    padding-bottom: 5px;
+    background-color: #7793ff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+/*--------------------------*/
+/*extracts of me*/
+/*--------------------------*/
+
+/*changing colour to red and colour to white*/
+#exactline1 {
+    background-color: red;
+    color: white;
+}
+
+    /*hover over - should change background colour and text colour*/
+    #exactline1:hover {
+        background-color: #fb4e4e;
+        color: black;
+    }
+/*changing colour to green and colour to white*/
+#exactline2 {
+    background-color: green;
+    color: white;
+    height: auto;
+}
+    /*hover over - should change background colour and text colour*/
+    #exactline2:hover {
+        background-color: lightgreen;
+        color: black;
+    }
+/*changing colour to blue and colour to white*/
+#exactline3 {
+    background-color: blue;
+    color: white;
+}
+    /*hover over - should change background colour and text colour*/
+    #exactline3:hover {
+        background-color: lightblue;
+        color: black;
+    }
+
+/*change certain aspects of the unordered list*/
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+/*list before*/
+li::before {
+    content: "\2022 ";
+}
+/*--------------------------*/
+
+/*CV picture and table*/
+
+/*--------------------------*/
+/*id for my cv*/
+#mikescv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    color: White;
+    background: #0084fd;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+
+/*table {
+    margin: 0 auto;
+    width: 500px;
+}
+
+td {
+    text-align: justify;
+    border-bottom: 1px solid #ffd800;
+}
+
+tr:hover {
+    background-color: #ff5d5d;
+    color: black;
+}*/
+
+/*change colour - center text/graphics - space it*/
+#downloadmyCV {
+    color: #ffffff;
+    align-content: center;
+    padding: 2px;
+}
+
+
+#mee {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #282828;
+    padding: 6px;
+}
+
+/*make it hard to see - ease into my hover */
+.img-circle {
+    border-radius: 50%;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+}
+    /*make it easy to see - ease into my hover (delayed action) */
+    .img-circle:hover {
+        border-radius: 50%;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+
+/*------------------*/
+/*text slider*/
+
+/*------------------*/
+
+
+a {
+    text-decoration: none;
+    color: #111b47;
+}
+
+    a:hover {
+        border-bottom: 1px dashed #ED971F;
+        color: #ED971F;
+    }
+
+/**** slider ****/
+/*for slider id and unordered lists should be the same height*/
+#slider, ul {
+    height: 200px;
+}
+/*my slider id*/
+#slider {
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+    position: relative;
+    width: 600px;
+    height: 700px;
+}
+    /*slider lists*/
+    #slider li {
+        float: left;
+        position: relative;
+        width: 600px;
+        display: inline-block;
+        height: 200px;
+    }
+    /*slider unordered list*/
+    #slider ul {
+        list-style: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 9000px;
+        transition: left .3s linear;
+        -moz-transition: left .3s linear;
+        -o-transition: left .3s linear;
+        -webkit-transition: left .3s linear;
+        margin-left: -25px;
+        font-family: century gothic;
+        color: #666;
+    }
+
+/*** Content ***/
+/*container for all the content of the slider*/
+.slider-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 550px;
+    min-height: 180px;
+    border-bottom: 1px solid #4f4f4f;
+    background-color: gray;
+}
+    /*slider container for h4*/
+    .slider-container h4 {
+        color: black;
+        text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.50);
+    }
+    /*slider container for p tag*/
+    .slider-container p {
+        margin: 10px 25px;
+        font-weight: bold;
+        background-color: gray;
+        color: white;
+        line-height: 150%;
+        text-align: justify;
+    }
+
+/*** target hooks ****/
+
+@-webkit-keyframes slide-animation {
+    0% {
+        opacity: 0;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    20% {
+        left: 0px;
+        opacity: 1;
+    }
+
+    22.5% {
+        opacity: 0.6;
+    }
+
+    25% {
+        left: -600px;
+        opacity: 1;
+    }
+
+    45% {
+        left: -600px;
+        opacity: 1;
+    }
+
+    47.5% {
+        opacity: 0.6;
+    }
+
+    50% {
+        left: -1200px;
+        opacity: 1;
+    }
+
+    70% {
+        left: -1200px;
+        opacity: 1;
+    }
+
+    72.5% {
+        opacity: 0.6;
+    }
+
+    75% {
+        left: -1800px;
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    98% {
+        left: -1800px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 0;
+    }
+}
+/*slide animation should be infinite for "Ul"*/
+#slider ul {
+    -webkit-animation: slide-animation 25s infinite;
+}
+
+    /* use to paused the content on mouse over */
+
+    #slider ul:hover {
+        -moz-animation-play-state: paused;
+        -webkit-animation-play-state: paused;
+    }
+
+
+/*Audio*/
+
+/*for my unordered list*/
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: white;
+    /*list-style-type: none;
+     list-style:none;*/
+    display: block;
+}
+
+/*list of a*/
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+    /*when you hover over the lists of ul or ol*/
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }

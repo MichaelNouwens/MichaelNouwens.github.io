@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio</title><!-- my title - audio-->
+    <script src="jq/jquery-3.2.0.min.js"></script> <!-- linking my jquery to my page so it can work-->
+    <link href="StyleSheet.css" rel="stylesheet" /><!-- linking my external stylesheet to my page-->
+    <meta charset="utf-8" />
+</head>
+
+<!--activates my pausing function which prevents the user from seeing the display - loader-->
+<body onload="myFunction()" style="margin:0;">
+    <!--my loader-->
+    <div id="loader"></div>
+
+    <!--shows the div-->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="dropdown"> <!--my drop down div-->
+            <button class="dropbtn">Menu</button><!--my menu button-->
+            <div class="dropdown-content"> <!-- my div dropdown content-->
+                <!--many links-->
+                <a href="Home.html">Home</a>
+                <a href="CV.html">My CV</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Story.html">Stories</a>
+                <a href="Video.html">Videos</a>
+            </div>
+        </div>
+        <!--where my content goes into - want to make it black-->
+        <div id="contentContainer">
+            <!--adds space for text and graphics - white background-->
+            <div class="newContent">
+                <!--my header with blue background with white text-->
+                <div class="headersection">
+                    <h1 class="headerfont">Audio</h1>
+                </div>
+                <!-- navigation to  songs using lists-->
+                <nav>
+                    <ul>
+                        <li><a  target="_blank" href="Media/Audio/k.mp3">kaleo way down we go</a></li>
+                        <li><a target="_blank" href="Media/Audio/The Weeknd - I Feel It Coming ft. Daft Punk.mp3">The Weeknd - I Feel It Coming ft. Daft Punk</a></li>
+                        <li><a target="_blank" href="Media/Audio/Bishop Briggs - Dark Side (Audio).mp3">Bishop Briggs - Dark Side</a></li>
+                        <li><a target="_blank" href="Media/Audio/DNCE - Cake By The Ocean.mp3">DNCE - Cake By The Ocean</a></li>
+                        <li><a target="_blank" href="Media/Audio/Harry Styles - Sign of the Times (Audio).mp3">Harry Styles - Sign of the Times</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <!--linking my external javascript to this page--> 
+    <script src="JavaScript.js"></script>
+</body>
+</html>

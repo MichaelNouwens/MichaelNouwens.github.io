@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Gallery</title><!-- my title - gallery-->
+    <script src="jq/jquery-3.2.0.min.js"></script> <!-- linking my jquery to my page so it can work-->
+    <link href="StyleSheet.css" rel="stylesheet" /><!-- linking my external stylesheet to my page-->
+    <style>
+        /*------------------*/
+        /*gallery*/
+        /*------------------*/
+        /*this is an internal stylesheet- proving that I can do it*/
+
+        /*targeting the class name img*/
+        div.img {
+            margin: 5px; /*adding a margin to the pictures */
+            border: 5px solid #454242; /*adding a border around the pictures*/
+            float: left; /* pushing everything to the left */
+            width: 30%; /*the width per picture*/
+            padding: 6px; /*space between the desc and graphic*/
+            opacity: 0.8; /*makes it slightly see through*/
+            align-content: center; /*align the content to the center*/
+            transition: opacity 0.3s ease-in-out; /*delayed action*/
+        }
+
+            /*hover over the images*/
+            div.img:hover {
+                opacity: 1; /*makes it clear - not see through*/
+                transition: opacity 0.3s ease-in-out;/*delayed action*/
+            }
+
+            /*the class of the image*/
+            div.img img {
+                width: 100%; 
+                height: auto;
+            }
+
+        /*targeting my description of each picture*/
+        div.desc {
+            padding: 15px; /*making space between desc and border/graphic*/
+            text-align: center; /*aligns the content to the center*/
+            background-color: #454242; /*background colour*/
+            color: white; /*text colour to white*/
+        }
+    </style>
+    <meta charset="utf-8" />
+</head>
+<!--activates my pausing function which prevents the user from seeing the display - loader-->
+<body onload="myFunction()" style="margin:0;">
+    <!--my loader-->
+    <div id="loader"></div>
+
+    <!--shows the div-->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!--my drop down div-->
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button> <!--my menu button-->
+            <div class="dropdown-content">
+                <!-- my div dropdown content-->
+                <!--many links-->
+                <a href="Home.html">Home</a>
+                <a href="CV.html">My CV</a>
+                <a href="Story.html">Stories</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Video.html">Videos</a>
+                <a href="Audio.html">Audio</a>
+            </div>
+        </div>
+        <!--where my content goes into - want to make it black-->
+        <div id="contentContainer">
+            <!--adds space for text and graphics - white background-->
+            <div class="newContent">
+                <!--my header with blue background with white text-->
+                <div class="headersection">
+                    <h1 class="headerfont">Gallery</h1>
+                </div>
+
+                <!--Div with a class (can be used more than once) named img -->
+                <div class="img">
+                    <!--links image - sets weight and height - if clicked , opens it in a new tab-->
+                    <a target="_blank" href="Gallery_Images/4VPSKMr.jpg">
+                        <img src="Gallery_Images/4VPSKMr.jpg" alt="WonderfulPicture" width="300" height="200">
+                    </a>
+                    <!-- div with class (can be used more than once) named desc-->
+                    <div class="desc">An amazing ocean background</div>
+                </div>
+
+                <!-- same as above-->
+                <div class="img">
+                    <a target="_blank" href="Gallery_Images/h0ahuMJr.jpg">
+                        <img src="Gallery_Images/h0ahuMJr.jpg" alt="Sunsent in the woods" width="300" height="200">
+                    </a>
+                    <div class="desc">Sunset in the woods</div>
+                </div>
+
+                <!-- same as above-->
+                <div class="img">
+                    <a target="_blank" href="Gallery_Images/lLfc09A.jpg">
+                        <img src="Gallery_Images/lLfc09A.jpg" alt="An amazing space picture" width="300" height="200">
+                    </a>
+                    <div class="desc">An amazing space picture</div>
+                </div>
+
+                <!-- same as above-->
+                <div class="img">
+                    <a target="_blank" href="Gallery_Images/LPAj2Wnr.jpg">
+                        <img src="Gallery_Images/LPAj2Wnr.jpg" alt="Classical picture" width="300" height="200">
+                    </a>
+                    <div class="desc">Classical picture</div>
+                </div>
+
+                <!-- same as above-->
+                <div class="img">
+                    <a target="_blank" href="Gallery_Images/oNOBvfN.jpg">
+                        <img src="Gallery_Images/oNOBvfN.jpg" alt="Snow in the woods" width="300" height="200">
+                    </a>
+                    <div class="desc">Snow in the woods</div>
+                </div>
+
+                <!-- same as above-->
+                <div class="img">
+                    <a target="_blank" href="Gallery_Images/xhDbQrbr.jpg">
+                        <img src="Gallery_Images/xhDbQrbr.jpg" alt="Another wonderul picture" width="300" height="200">
+                    </a>
+                    <div class="desc">Another wonderul picture</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- linking my enternal Javascript to this page-->
+    <script src="JavaScript.js"></script>
+</body>
+</html>

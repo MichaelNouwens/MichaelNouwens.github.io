@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+    <title>CV</title> <!-- my title - CV-->
+    <script src="jq/jquery-3.2.0.min.js"></script> <!-- linking my jquery to my page so it can work-->
+    <link href="StyleSheet.css" rel="stylesheet" /> <!-- linking my external stylesheet to my page-->
+    <meta charset="utf-8" />
+</head>
+<!--activates my pausing function which prevents the user from seeing the display - loader-->
+<body onload="myFunction()" style="margin:0;">
+    <!--my loader-->
+    <div id="loader"></div>
+
+    <!--shows the div-->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="dropdown"> <!--my drop down div-->
+            <button class="dropbtn">Menu</button> <!--my menu button-->
+            <div class="dropdown-content"> <!-- my div dropdown content-->
+                <!--many links-->
+                <a href="Home.html">Home</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Story.html">Stories</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+        <!--where my content goes into - want to make it black-->
+        <div id="contentContainer">
+            <!--adds space for text and graphics - white background-->
+            <div style="background-color:#282828" class="newContent">
+                <!--my header with blue background with white text-->
+                <div class="headersection">
+                    <h1 class="headerfont">CV</h1>
+                </div>
+                <!-- div for the picture of me and my cv (able to download)-->
+                <div id="mee">
+                    <a href="CV/My cv.docx" download>
+                        <img class="img-circle" src="Images/mee.JPG" alt="download cv" title="cv" height="350" />
+                    </a>
+                </div>
+                <!-- text telling the user where to download my cv from-->
+                <p id="downloadmyCV">Download my CV above</p>
+                <!-- div for my slider -->
+                <div id="slider">
+                    <!-- unordered list-->
+                    <ul>
+                        <!-- each list containing personal information about myself-->
+                        <li>
+                            <div class="slider-container">
+                                <h4>Objective</h4>
+                                <p>
+                                    •	I am looking for a company where I can use my talents and skills to improve, grow and expand the company. <br />
+                                    •	I want to be successful in a challenging environment and to gain important skills which will build the success of the company.<br />
+                                    •	Software Developer - I want to share my high level skills that I have learnt to join a programming company or any code-based companies.
+
+                                </p>
+                            </div>
+                        </li>
+                        <!-- same as above-->
+                        <li>
+                            <div class="slider-container">
+                                <h4>Subjects</h4>
+                                <p>
+                                    •	Information Technology<br />
+                                    •	Physical Sciences<br />
+                                    •	Mathematics<br />
+                                    •	Geography<br />
+                                    •	Afrikaans<br />
+                                    •	English<br />
+                                    •	Life Orientation
+
+                                </p>
+                            </div>
+                        </li>
+                        <!-- same as above-->
+                        <li>
+                            <div class="slider-container">
+                                <h4>Experience</h4>
+                                <p>
+                                    •	120 Hours (completed in 2016) - PC Maintenance.<br />
+                                    •	Worked at Nouwens Carpets.<br />
+                                    •	Shadowed a friend during Matric (2015) for a week - programming.<br />
+                                    •	Shadowed a programmer (a friend) at Chase (2014) - for a week.<br />
+                                    •   Programming in C#, HTML, JavaScript, CSS, T-SQL, and BLEND still in progress
+
+                                </p>
+                            </div>
+                        </li>
+                        <!-- same as above-->
+                        <li>
+                            <div class="slider-container">
+                                <h4>Education</h4>
+                                <p>
+                                    •	[CTU Training Solutions: in progress] — [Diploma, Menlyn]<br />
+                                    •	[Damelin] — [Diploma, Menlyn]<br />
+                                    •	[Harriston] — [IEB Matric Certificate, Harrismith]
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--linking my external javascript to this page--> 
+    <script src="JavaScript.js"></script>
+</body>
+</html>
